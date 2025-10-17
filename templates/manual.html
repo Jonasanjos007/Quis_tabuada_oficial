@@ -46,15 +46,14 @@
                 <h2>1. Como acessar</h2>
                 <p>Acesse o Quiz Tabuada pelo link:</p>
                 <p>
-                    <a class="cta" href="https://quis-tabuada-oficial.onrender.com" target="_blank" rel="noopener">
+                    <a class="cta" href="https://tabuada-atualizaada.onrender.com/" target="_blank" rel="noopener">
                         🚀 Abrir aplicação
                     </a>
                 </p>
                 <!-- QR Code local se existir, senão fallback -->
                 <picture>
-                    <source srcset="{{ url_for('static', filename='imagens/QR.png') }}" />
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=300x300&data=https%3A%2F%2Ftabuada-atualizaada.onrender.com%2F"
-                        alt="QR Code — Acesso ao Quiz" loading="lazy">
+                <img src="{{ url_for('static', filename='imagens/QR.png') }}" alt="Níveis e estrelas" style="width: 200px;">
+
                 </picture>
                 <div style="margin-top:12px">
                     <span class="tag">🔢 Matemática</span>
