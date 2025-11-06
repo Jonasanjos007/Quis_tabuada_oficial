@@ -244,7 +244,8 @@ def responder():
         pontos = session['pontos']
         nivel = session['nivel']
 
-        if acertos <= 1: estrelas = 1
+        if acertos <= 0: estrelas = 0
+        elif acertos <= 1: estrelas = 1
         elif acertos <= 3: estrelas = 3
         elif acertos <= 5: estrelas = 4
         elif acertos <= 8: estrelas = 6

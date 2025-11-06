@@ -81,7 +81,7 @@
 
       // Tentar tocar o som correspondente
       try {
-        if (!estrelas || estrelas === 0) {
+        if (estrelas === 0) {
           audioVaia.volume = 0.8;
           await audioVaia.play();
         } else {
